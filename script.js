@@ -1,24 +1,13 @@
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+// script.js
 
-@WebServlet("/playMovie")
-public class MovieRedirectServlet extends HttpServlet {
-    private static final long serialVersionUID = 1L;
+// URL do filme que você deseja reproduzir
+const movieUrl = "https://files.fm/u/bwefjknrhh"; // Substitua pelo link real do filme
 
-    // URL do filme que você deseja reproduzir
-    private static final String MOVIE_URL = "https://files.fm/u/bwefjknrhh"; // Substitua pelo link real do filme
+// Captura o botão de reprodução
+const playButton = document.getElementById('playButton');
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Redireciona para a URL do filme
-        response.sendRedirect(MOVIE_URL);
-    }
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Chama o método doGet para redirecionar
-        doGet(request, response);
-    }
-}
+// Adiciona um evento de clique ao botão
+playButton.addEventListener('click', function() {
+    // Redireciona para a URL do filme
+    window.location.href = movieUrl;
+});
