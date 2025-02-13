@@ -47,6 +47,25 @@
    </div>
   </header>
   <!-- Hero Section -->
+  <!-- Adicione este botão na seção Hero ou onde preferir -->
+<button id="playButton" class="bg-white text-black px-4 py-2 rounded flex items-center space-x-2">
+    <i class="fas fa-play"></i>
+    <span>Play</span>
+</button>
+
+<script>
+    // URL do filme que você deseja reproduzir
+    const movieUrl = "https://files.fm/u/bwefjknrhh"; // Substitua pelo link real do filme
+
+    // Captura o botão de reprodução
+    const playButton = document.getElementById('playButton');
+
+    // Adiciona um evento de clique ao botão
+    playButton.addEventListener('click', function() {
+        // Redireciona para a URL do filme
+        window.location.href = movieUrl;
+    });
+</script>
   <section class="relative h-screen">
    <img alt="Hero image with black background and white text" class="w-full h-full object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/ZHPfWCMc3qoNO-6__TEvEOX81bjTCXExbltmDqgeFxA.jpg" width="1920"/>
    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black">
