@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css"> <!-- Vinculando o CSS -->
 </head>
-<body>
+<body class="bg-black text-white">
     <!-- Header -->
-    <header class="flex justify-between items-center">
+    <header class="flex justify-between items-center p-4 bg-black bg-opacity-75 fixed w-full z-10">
         <div class="flex items-center space-x-4">
             <img alt="Logo" class="h-8" src="https://i.postimg.cc/rwxDRx5J/deepflix-logo.png" />
             <nav class="hidden md:flex space-x-4">
@@ -25,15 +25,14 @@
         <div class="flex items-center space-x-4">
             <i class="fas fa-search"></i>
             <i class="fas fa-bell"></i>
-            <img alt="User  profile" class="h-8 w-8 rounded-full" src="https://storage.googleapis.com/a1aa/image/s8u489YUzo_uiLF5m1fflIrX0EuTXdUGcaJ8xFCgG_8.jpg" />
+            <img alt="User profile" class="h-8 w-8 rounded-full" src="https://storage.googleapis.com/a1aa/image/s8u489YUzo_uiLF5m1fflIrX0EuTXdUGcaJ8xFCgG_8.jpg" />
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <img alt="Hero image" src="https://storage.googleapis.com/a1aa/image/ZHPfWCMc3qoNO-6__TEvEOX81bjTCXExbltmDqgeFxA.jpg" />
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black">
-        </div>
+    <section class="relative h-screen">
+        <img alt="Hero image" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/ZHPfWCMc3qoNO-6__TEvEOX81bjTCXExbltmDqgeFxA.jpg" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
         <div class="absolute bottom-24 left-8 md:left-16 space-y-4">
             <h1 class="text-4xl md:text-6xl font-bold">Movie Title</h1>
             <p class="max-w-md">A brief description of the movie goes here. It should be engaging and give a glimpse of the plot.</p>
@@ -51,48 +50,4 @@
     </section>
 
     <!-- Content Section -->
-    <section class="space-y-8 py-8 px-4 md:px-16">
-        <!-- Row 1 -->
-        <div>
-            <h2 class="text-2xl font-bold mb-4">Trending Now</h2>
-            <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
-                <img alt="Movie 1" class="w-48 h-32 object-cover rounded" src="https://storage.googleapis.com/a1aa/image/Dj5Mmb3K_d2mnp-yp5OFEu7yphJzozmezGFSIHqJz68.jpg" />
-                <img alt="Movie 2" class="w-48 h-32 object-cover rounded" src="https://storage.googleapis.com/a1aa/image/R4_Q15MhN-8XuLIH3zEmyWFNim01cn_7R8Hzm5zMECQ.jpg" />
-                <img alt="Movie 3" class="w-48 h-32 object-cover rounded" src="https://storage.googleapis.com/a1aa/image/LZ3e4UT6Uvx16aUqvszMQL8oThxagR8HqE79O20zNYg.jpg" />
-                <img alt="Movie 4" class="w-48 h-32 object-cover rounded" src="https://storage.googleapis.com/a1aa/image/ldQQLjbvP4X7ROhrAk-25TdNceR01dO8eeY8sC3bC8I.jpg" />
-                <img alt="Movie 5" class="w-48 h-32 object-cover rounded" src="https://storage.googleapis.com/a1aa/image/39LGCNK1d4oaMy3RkeT9f4esR-Tybzoo6jEUo7QqKJk.jpg" />
-            </div>
-        </div>
-        <!-- Additional rows can be added here -->
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black bg-opacity-75 py-8">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-instagram"></i></a>
-                <a class="text-gray-400 hover:text-white" href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <div class="flex justify-center space-x-4 text-gray-400 text-sm">
-                <a class="hover:underline" href="#">Audio and Subtitles</a>
-                <a class="hover:underline" href="#">Help Center</a>
-                <a class="hover:underline" href="#">Gift Cards</a>
-                <a class="hover:underline" href="#">Media Center</a>
-                <a class="hover:underline" href="#">Investor Relations</a>
-                <a class="hover:underline" href="#">Jobs</a>
-                <a class="hover:underline" href="#">Terms of Use</a>
-                <a class="hover:underline" href="#">Privacy</a>
-                <a class="hover:underline" href="#">Legal Notices</a>
-                <a class="hover:underline" href="#">Cookie Preferences</a>
-                <a class="hover:underline" href="#">Corporate Information</a>
-                <a class="hover:underline" href="#">Contact Us</a>
-            </div>
-            <div class="flex justify-center mt-4">
-                <p class="text-gray-400 text-sm">© 2023 Netflix Clone</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    <section class="space-y-8 py-8 px-4 md:px
