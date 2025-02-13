@@ -1,0 +1,188 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Netflix Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-black text-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-4 bg-black bg-opacity-75 fixed w-full z-10">
+   <div class="flex items-center space-x-4">
+    <img alt="Netflix logo with red background and white text" class="h-8" height="50" src="https://storage.googleapis.com/a1aa/image/5WkOsUk6A-Op5sdcJ3vAfK33F3ueBDcWei2OtAMvw9Q.jpg" width="100"/>
+    <nav class="hidden md:flex space-x-4">
+     <a class="hover:underline" href="#">
+      Home
+     </a>
+     <a class="hover:underline" href="#">
+      TV Shows
+     </a>
+     <a class="hover:underline" href="#">
+      Movies
+     </a>
+     <a class="hover:underline" href="#">
+      New &amp; Popular
+     </a>
+     <a class="hover:underline" href="#">
+      My List
+     </a>
+    </nav>
+   </div>
+   <div class="flex items-center space-x-4">
+    <i class="fas fa-search">
+    </i>
+    <i class="fas fa-bell">
+    </i>
+    <img alt="User profile icon with white background and black text" class="h-8 w-8 rounded-full" height="30" src="https://storage.googleapis.com/a1aa/image/s8u489YUzo_uiLF5m1fflIrX0EuTXdUGcaJ8xFCgG_8.jpg" width="30"/>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative h-screen">
+   <img alt="Hero image with black background and white text" class="w-full h-full object-cover" height="1080" src="https://storage.googleapis.com/a1aa/image/ZHPfWCMc3qoNO-6__TEvEOX81bjTCXExbltmDqgeFxA.jpg" width="1920"/>
+   <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black">
+   </div>
+   <div class="absolute bottom-24 left-8 md:left-16 space-y-4">
+    <h1 class="text-4xl md:text-6xl font-bold">
+     Movie Title
+    </h1>
+    <p class="max-w-md">
+     A brief description of the movie goes here. It should be engaging and give a glimpse of the plot.
+    </p>
+    <div class="flex space-x-4">
+     <button class="bg-white text-black px-4 py-2 rounded flex items-center space-x-2">
+      <i class="fas fa-play">
+      </i>
+      <span>
+       Play
+      </span>
+     </button>
+     <button class="bg-gray-700 bg-opacity-75 text-white px-4 py-2 rounded flex items-center space-x-2">
+      <i class="fas fa-info-circle">
+      </i>
+      <span>
+       More Info
+      </span>
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Content Section -->
+  <section class="space-y-8 py-8 px-4 md:px-16">
+   <!-- Row 1 -->
+   <div>
+    <h2 class="text-2xl font-bold mb-4">
+     Trending Now
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Movie 1 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/Dj5Mmb3K_d2mnp-yp5OFEu7yphJzozmezGFSIHqJz68.jpg" width="300"/>
+     <img alt="Movie 2 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/R4_Q15MhN-8XuLIH3zEmyWFNim01cn_7R8Hzm5zMECQ.jpg" width="300"/>
+     <img alt="Movie 3 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/LZ3e4UT6Uvx16aUqvszMQL8oThxagR8HqE79O20zNYg.jpg" width="300"/>
+     <img alt="Movie 4 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/ldQQLjbvP4X7ROhrAk-25TdNceR01dO8eeY8sC3bC8I.jpg" width="300"/>
+     <img alt="Movie 5 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/39LGCNK1d4oaMy3RkeT9f4esR-Tybzoo6jEUo7QqKJk.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 2 -->
+   <div>
+    <h2 class="text-2xl font-bold mb-4">
+     Top Picks for You
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Movie 6 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/7Ph3RdgdqnoxWe0tznOleMw5Ft5pYshn4UZrvXHl82E.jpg" width="300"/>
+     <img alt="Movie 7 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/X_8B-Xh7hBpCReCeFDTnlmRri_V6DmWPUeomkpbbEQI.jpg" width="300"/>
+     <img alt="Movie 8 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/7d02H2d2tO-7TABEs_ozK7wjQ8EwFyr7IVTA8Lj1HR4.jpg" width="300"/>
+     <img alt="Movie 9 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/tJSBsOFwqiRgsd94d4HK6I1FG0_JK0inYRR4uSDLWb4.jpg" width="300"/>
+     <img alt="Movie 10 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/S_GDelZE1lWYGNSHmYNm_F0A8evJZxZkiJTzV8Ci4tI.jpg" width="300"/>
+    </div>
+   </div>
+   <!-- Row 3 -->
+   <div>
+    <h2 class="text-2xl font-bold mb-4">
+     Recently Added
+    </h2>
+    <div class="flex space-x-4 overflow-x-scroll scrollbar-hide">
+     <img alt="Movie 11 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/TTZ-jsddStsjFsFx_W2ZjI7RX7S2Hgtel1qs0tXntjY.jpg" width="300"/>
+     <img alt="Movie 12 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/hvFuOJw828h4HkAcXZeDy2LNPKj0zdosKcaxEhndrqc.jpg" width="300"/>
+     <img alt="Movie 13 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/s4b-Tb4x-t2Vfj6KsD6qc4zezCtHeL3_sJPZEkq75Dk.jpg" width="300"/>
+     <img alt="Movie 14 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/55joUPQ5zQZac1RTPnsUwpOPe_dH5rrkW84EbZq-H9M.jpg" width="300"/>
+     <img alt="Movie 15 thumbnail with black background and white text" class="w-48 h-32 object-cover rounded" height="200" src="https://storage.googleapis.com/a1aa/image/M0ZepDVuqJDCclGjVP-H4gwZoQYtnCjJuZcRge28NEM.jpg" width="300"/>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-black bg-opacity-75 py-8">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-center space-x-6 mb-4">
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="text-gray-400 hover:text-white" href="#">
+      <i class="fab fa-youtube">
+      </i>
+     </a>
+    </div>
+    <div class="flex justify-center space-x-4 text-gray-400 text-sm">
+     <a class="hover:underline" href="#">
+      Audio and Subtitles
+     </a>
+     <a class="hover:underline" href="#">
+      Help Center
+     </a>
+     <a class="hover:underline" href="#">
+      Gift Cards
+     </a>
+     <a class="hover:underline" href="#">
+      Media Center
+     </a>
+     <a class="hover:underline" href="#">
+      Investor Relations
+     </a>
+     <a class="hover:underline" href="#">
+      Jobs
+     </a>
+     <a class="hover:underline" href="#">
+      Terms of Use
+     </a>
+     <a class="hover:underline" href="#">
+      Privacy
+     </a>
+     <a class="hover:underline" href="#">
+      Legal Notices
+     </a>
+     <a class="hover:underline" href="#">
+      Cookie Preferences
+     </a>
+     <a class="hover:underline" href="#">
+      Corporate Information
+     </a>
+     <a class="hover:underline" href="#">
+      Contact Us
+     </a>
+    </div>
+    <div class="flex justify-center mt-4">
+     <p class="text-gray-400 text-sm">
+      © 2023 Netflix Clone
+     </p>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
